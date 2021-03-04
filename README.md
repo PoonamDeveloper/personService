@@ -1,5 +1,6 @@
 personService Application provides REST API interface for 
-CRUD Operations on Person Object. Done by Poonam  Agarwal.
+CRUD Operations on Person Object. 
+Done by Poonam  Agarwal.
 
 
 ---------------About Development:----------------
@@ -15,13 +16,14 @@ It uses:
 8. Docker
 
 ----------------How to run using docker image:---------------
+
 1 : Setup docker environment. Get docker and docker-compose.
 On ubuntu use command:
    $ sudo apt update -q
    $ sudo apt install -q -y --no-install-recommends docker.io docker-compose
 2 : Pull the docker image from docker hub.
     docker pull poonamthedeveloper/personservice
-3 : Run the docker image
+3 : Run the application using the docker image
     docker run -p8082:8081 --name personService1 poonamthedeveloper/personservice
 
 4 : To run multiple instances of the same service ,
@@ -38,7 +40,7 @@ The applications runs on the port 8081 by default and the REST API is accessible
 
 
 ----------------How to build and package a jar.----------------
-1. Download or get the peronService project from GitHub. 
+1. Download or get the personService project from GitHub. 
   git clone https://github.com/PoonamDeveloper/personService.git
 2. Go to the folder personService.
   cd personService
