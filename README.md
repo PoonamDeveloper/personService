@@ -17,21 +17,20 @@ It uses:
 
 ----------------How to run using docker image:---------------
 
-1 : Setup docker environment. Get docker and docker-compose.
-On ubuntu use command:
-   $ sudo apt update -q
-   $ sudo apt install -q -y --no-install-recommends docker.io docker-compose
-2 : Pull the docker image from docker hub.
-    docker pull poonamthedeveloper/personservice
-3 : Run the application using the docker image
-    docker run -p8082:8081 --name personService1 poonamthedeveloper/personservice
-
-4 : To run multiple instances of the same service ,
-change the port number of the host machine from 8082 to a different port(e.g. 8083) and use the command: 
-   docker run -d -p8083:8081 --name personService2 poonam_personservice:latest
-5 : Test the application REST API:
-The applications runs on the port 8081 by default and the REST API is accessible at:
-   http://localhost:8082/people
+1 : Setup docker environment. Get docker and docker-compose. \
+On ubuntu use command: \
+   $ sudo apt update -q \
+   $ sudo apt install -q -y --no-install-recommends docker.io docker-compose \
+2 : Pull the docker image from docker hub. \
+    docker pull poonamthedeveloper/personservice \
+3 : Run the application using the docker image \
+    docker run -p8082:8081 --name personService1 poonamthedeveloper/personservice \
+4 : To run multiple instances of the same service , \
+change the port number of the host machine from 8082 to a different port(e.g. 8083) and use the command:  \
+   docker run -d -p8083:8081 --name personService2 poonam_personservice:latest \
+5 : Test the application REST API: \
+The applications runs on the port 8081 by default and the REST API is accessible at: \
+   http://localhost:8082/people 
 
 
 ----------------Pre-Requisite for building project.----------------
@@ -40,19 +39,18 @@ The applications runs on the port 8081 by default and the REST API is accessible
 
 
 ----------------How to build and package a jar.----------------
-1. Download or get the personService project from GitHub. 
-  git clone https://github.com/PoonamDeveloper/personService.git
-2. Go to the folder personService.
-  cd personService
-3. Use the command "mvn clean package". It will build the jar file and run the tests by default.
-   Alternatively, you could use the command "mvn clean package -DskipTests=true" to skip the tests.
-
+1. Download or get the personService project from GitHub.  \
+  git clone https://github.com/PoonamDeveloper/personService.git 
+2. Go to the folder personService. \
+  cd personService 
+3. Use the command "mvn clean package". It will build the jar file and run the tests by default. \
+   Alternatively, you could use the command "mvn clean package -DskipTests=true" to skip the tests. \
 
 
 ----------------How to run the application using maven:----------------
-1. Go to the folder personService. Use the command "mvn spring-boot:run"
-The applications runs on the port 8081 by default and the REST API is accessible at:
-http://localhost:8081/people
+1. Go to the folder personService. Use the command "mvn spring-boot:run" \
+The applications runs on the port 8081 by default and the REST API is accessible at: \
+http://localhost:8081/people 
 
 
 
