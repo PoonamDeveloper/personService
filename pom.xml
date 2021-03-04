@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.embl</groupId>
 	<artifactId>personService</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>PersonService</name>
 	<description>Sample SPRING-JPA-REST-project for test</description>
 	<properties>
@@ -41,7 +41,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
